@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchUsers } from "../store";
+import { addUsers, fetchUsers } from "../store";
+
 
 
 const UserList = ()=>{
-    const {data} = useSelector((state)=>{
+    const {data,isLoading,error} = useSelector((state)=>{
         return state.users
     })
 
@@ -13,9 +14,24 @@ const UserList = ()=>{
     useEffect(()=>{
         dispatch(fetchUsers());
     },[])
+
+    const handleAddUsers = ()=>{
+        dispatch(addUsers())
+    }
+
+    if(isLoading){
+        return <div>Loading...</div>
+    }
+    if(error){
+        return <div>Error...</div>
+    }
+    const renderList = data.map((user)=>{
+        return <div key={user.id} className="flex flex-row mb-3">{user.name}</div>
+    })
     return(
         <div>
-           <h1>{JSON.stringify(data)}</h1>
+          <button onClick={handleAddUsers}>add</button>
+           {renderList}
 
            
         </div>

@@ -1,10 +1,10 @@
+import UserList from "./component/UserList";
 
 
 function App() {
   return (
-    <div>
-      <h1>api fetchinf</h1>
-      
+    <div className="container mx-auto"> 
+    <UserList/>  
     </div>
   );
 }

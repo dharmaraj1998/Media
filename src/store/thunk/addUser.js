@@ -3,11 +3,11 @@ import axios from "axios";
 import { faker } from "@faker-js/faker";
 
 
-const addUsers = createAsyncThunk("users/add" , async ()=>{
+const addUser = createAsyncThunk("users/add" , async ()=>{
     const response = await axios.post("http://localhost:3005/users",{
         name : faker.internet.userName()
     })
     return response.data;
 })
 
-export {addUsers}
+export {addUser}

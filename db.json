@@ -1,46 +1,5 @@
 {
-  "users": [
-    {
-      "id": "fce7",
-      "name": "Eunice63"
-    },
-    {
-      "id": "f1cf",
-      "name": "Clarissa_Bogan"
-    },
-    {
-      "id": "1c3f",
-      "name": "Rhianna.Walter2"
-    },
-    {
-      "id": "d06a",
-      "name": "Rogelio.Ryan73"
-    },
-    {
-      "id": "fedb",
-      "name": "Jayme84"
-    },
-    {
-      "id": "0347",
-      "name": "Gavin.Cummerata"
-    },
-    {
-      "id": "352f",
-      "name": "Anabelle_Nienow"
-    },
-    {
-      "id": "432f",
-      "name": "Keshawn.Fay8"
-    },
-    {
-      "id": "09f5",
-      "name": "Roxanne.Mosciski54"
-    },
-    {
-      "id": "b2c8",
-      "name": "Viva.Bednar19"
-    }
-  ],
+  "users": [],
   "albums": [],
   "photos": []
 }
